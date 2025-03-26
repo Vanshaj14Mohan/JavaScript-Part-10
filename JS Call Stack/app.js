@@ -12,3 +12,20 @@ function demo(){
 console.log("Calling Demo Function");
 demo();
 console.log("Done, Bye");
+
+console.log("Visualizing the call stack")
+
+function one(){
+    return 1;
+}
+
+function two(){
+    return one() + one();
+}
+
+function three(){
+    let ans = two() + one();
+    console.log("Final value after merging is:", ans);
+}
+
+three();
