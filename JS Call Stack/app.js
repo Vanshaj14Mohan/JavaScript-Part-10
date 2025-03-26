@@ -13,7 +13,7 @@ console.log("Calling Demo Function");
 demo();
 console.log("Done, Bye");
 
-console.log("Visualizing the call stack")
+console.log("Visualizing the call stack:")
 
 function one(){
     return 1;
