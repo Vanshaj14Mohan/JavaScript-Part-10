@@ -3,7 +3,7 @@ h2 = document.querySelector("h2");
 function changeColor(color, delay, nextColChange){ //nextColChange is basically a callback here.
     setTimeout(() =>{
         h2.style.color = color;
-        if (nextColChange) nextColChange();
+        if (nextColChange) nextColChange(); //if value of nextColChange is false
     }, delay);
     h2.style.color = color;
 }
@@ -38,5 +38,7 @@ changeColor("red", 1000, ()=> { //adding nested callbacks
         });
     });
 });
+//Nesting of Callbacks is not recommended as it can lead to Callback Hell.
+//Nesting of Callbacks is not good practice. It's better to use Promises or async/await.
 // changeColor("yellow", 2000);
 // changeColor("green", 3000);
