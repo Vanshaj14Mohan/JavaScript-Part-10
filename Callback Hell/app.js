@@ -28,8 +28,15 @@ function changeColor(color, delay, nextColChange){ //nextColChange is basically 
 
 // setTimeout(changeColor("green"), 3000);
 
-changeColor("red", 1000, ()=> {
-    changeColor("purple", 1000);
+//Generating 5 colors through nesting.
+changeColor("red", 1000, ()=> { //adding nested callbacks 
+    changeColor("purple", 1000, ()=>{
+        changeColor("blue", 1000, ()=>{
+            changeColor("green", 1000, ()=>{
+                changeColor("orange", 1000);
+            });
+        });
+    });
 });
 // changeColor("yellow", 2000);
 // changeColor("green", 3000);
