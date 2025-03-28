@@ -42,7 +42,7 @@ function savetoDb(data){
     });
 }
 
-//Then and Catch method
+//Using Then and Catch method
 // let request = savetoDb("Hilly Areas") //here request = Promise Object. 
 // request.then(()=>{
 //     console.log("Promise was resolved");
