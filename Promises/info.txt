@@ -1,0 +1,9 @@
+Promises are basically JavaScript objects that represent the eventual completion (or failure) of an asynchronous operation,
+and it's resulting value.
+
+Promises -> It's an object that have two things in it.
+1. Resolve -> Success Callback
+2. Reject -> Failure Callback
+
+2 most frequently used methods in Promises
+then() AND catch()
