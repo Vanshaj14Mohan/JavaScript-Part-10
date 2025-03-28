@@ -54,7 +54,7 @@ function savetoDb(data){
 // });
 // console.log(request);
    
-
+//More compact version
 savetoDb("Hilly Areas") //here request = Promise Object. 
 .then(()=>{
     console.log("Promise was resolved"); 
@@ -62,4 +62,3 @@ savetoDb("Hilly Areas") //here request = Promise Object.
 .catch(()=>{
     console.log("Promise was rejected");
 }); 
-//More compact version
