@@ -20,3 +20,26 @@ function changeColor(color, delay){ //nextColChange is basically a callback here
 //         });
 //     });
 // });
+
+//Now converting Callback Hell to Promises
+
+changeColor("Red", 1000)
+.then(()=>{
+    console.log("Red color done");
+    return changeColor("Purple", 1000); //returning a promise object
+})
+.then(()=>{
+    console.log("Purple color done");
+    return changeColor("Blue", 1000);
+})
+.then(()=>{
+    console.log("Blue color done");
+    return changeColor("Green", 1000);
+})
+.then(()=>{
+    console.log("Blue color done");
+    return changeColor("Orange", 1000);
+})
+.then(()=>{
+    console.log("Orange color done");
+})
