@@ -1,3 +1,5 @@
+//Promises are rejected and resolved with some data (valid results or errors).
+
 // function savetoDb(data, success, failure){
 //     let internetSpeed = Math.floor(Math.random()* 10) + 1;
 //     if(internetSpeed > 5){
