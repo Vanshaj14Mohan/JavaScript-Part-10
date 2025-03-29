@@ -22,6 +22,7 @@ function changeColor(color, delay){ //nextColChange is basically a callback here
 // });
 
 //Now converting Callback Hell to Promises
+//Not using catch here because color is something which will definitely change, so no need to handle error here.
 
 changeColor("Red", 1000)
 .then(()=>{
@@ -37,7 +38,7 @@ changeColor("Red", 1000)
     return changeColor("Green", 1000);
 })
 .then(()=>{
-    console.log("Blue color done");
+    console.log("Green color done");
     return changeColor("Orange", 1000);
 })
 .then(()=>{
